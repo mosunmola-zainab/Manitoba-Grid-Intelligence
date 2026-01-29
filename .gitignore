@@ -1,0 +1,71 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Airflow
+airflow.db
+airflow.cfg
+logs/
+*.log
+
+# Docker
+docker-compose.override.yml
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+
+# dbt
+target/
+dbt_packages/
+dbt_modules/
+
+# Data files
+*.csv
+*.parquet
+*.json
+!config/*.json
+data/
+
+# Secrets
+*.pem
+*.key
+credentials/
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db

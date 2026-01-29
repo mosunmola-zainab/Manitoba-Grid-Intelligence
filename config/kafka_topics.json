@@ -1,0 +1,44 @@
+{
+  "topics": [
+    {
+      "name": "grid.sensor.readings",
+      "partitions": 6,
+      "replication_factor": 1,
+      "config": {
+        "retention.ms": 604800000,
+        "cleanup.policy": "delete"
+      },
+      "description": "Real-time sensor readings from grid stations"
+    },
+    {
+      "name": "grid.power.generation",
+      "partitions": 3,
+      "replication_factor": 1,
+      "config": {
+        "retention.ms": 604800000,
+        "cleanup.policy": "delete"
+      },
+      "description": "Power generation metrics per station"
+    },
+    {
+      "name": "grid.power.demand",
+      "partitions": 3,
+      "replication_factor": 1,
+      "config": {
+        "retention.ms": 604800000,
+        "cleanup.policy": "delete"
+      },
+      "description": "Regional power demand data"
+    },
+    {
+      "name": "grid.alerts",
+      "partitions": 1,
+      "replication_factor": 1,
+      "config": {
+        "retention.ms": 2592000000,
+        "cleanup.policy": "delete"
+      },
+      "description": "System alerts and anomaly notifications"
+    }
+  ]
+}
